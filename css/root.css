@@ -55,7 +55,7 @@
 	.menu-active { }
     .nav-menu .div { margin-top: 13px; position: relative; float: left; width: 16px; height: 16px; background: url(../images/bolt.png); } 
 	.nav-panel .address { position: absolute; right: 125px; top: 88px; height: 22px; width: 150px; }
-    .nav-panel .address a { color: white; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); font-size: 14px; font-family: 'PT Sans'; text-decoration: none; }
+    .nav-panel .address a { color: white; opacity: 0.8; text-shadow: 1px 1px 1px rgba(0,0,0,0.4); font-size: 14px; font-family: 'PT Sans'; text-decoration: none; }
      .bell .base { width: 34px; height: 40px; background: url(../images/bell-base.png) center no-repeat; }
      .bell .ding-dong { position: absolute; top: 8px; right: -3px; width: 56px; height: 113px; cursor: pointer; background: url(../images/bell.png) center no-repeat; }
 

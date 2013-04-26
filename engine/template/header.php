@@ -20,7 +20,7 @@
 
               im@andreystarkov.ru
 
-        -->
+        --> 
 
         <meta charset="utf-8">
 
@@ -38,7 +38,7 @@
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/nanoscroller.css"> 
 		
-		<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=oc2aCjzZ_p7qgdfNc3EwJD9JG38dEiHC&width=980&height=400&id=ymap-main"></script>
+		<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=oc2aCjzZ_p7qgdfNc3EwJD9JG38dEiHC&width=980&height=400&id=ymap-main"></script>
     
         <link type='text/css' href='css/modal.css' rel='stylesheet' media='screen' />
 
@@ -74,22 +74,22 @@
                         <div class="ding-dong"></div>
                     </div>
 
-	<div class="nav-menu">
-	
-		<a href="int.php" class="int<?if(strstr($_SERVER['REQUEST_URI'], "int.php") ){ ?> active"<? } else { ?> tooltip-bottom" 
-		title="Обзор зала ресторана на 360 градусов"<? } ?>>Интерьер ресторана</a>
-		
-		<div class="div d5"></div>
-		
-		<a href="menu.php" class="int<?if(strstr($_SERVER['REQUEST_URI'], "menu.php") ){ ?> active"<? } else { ?> tooltip-bottom" 
-		title="В меню ресторана &mdash; лучшие сорта светлого и<br> темного пива и уникальные закуски."<? } ?>>Меню</a>
-		
-		<div class="div d6"></div>
-		
-		<a href="banket.php" class="int<?if(strstr($_SERVER['REQUEST_URI'], "banket.php") ){ ?> active"<? } else { ?> tooltip-bottom" 
-		title="Наш просторный и уютный банкетный зал<br> ждет Вас и Ваших гостей."<? } ?>>Банкетный зал</a>
-	
-	</div>
+                    	<div class="nav-menu">
+                    	
+                    		<a href="int.php" class="int<?if(strstr($_SERVER['REQUEST_URI'], "int.php") ){ ?> active"<? } else { ?> tooltip-bottom" 
+                    		title="Обзор зала ресторана на 360 градусов"<? } ?>>Интерьер ресторана</a>
+                    		
+                    		<div class="div d5"></div>
+                    		
+                    		<a href="menu.php" class="int<?if(strstr($_SERVER['REQUEST_URI'], "menu.php") ){ ?> active"<? } else { ?> tooltip-bottom" 
+                    		title="В меню ресторана &mdash; лучшие сорта светлого и<br> темного пива и уникальные закуски."<? } ?>>Меню</a>
+                    		
+                    		<div class="div d6"></div>
+                    		
+                    		<a href="banket.php" class="int<?if(strstr($_SERVER['REQUEST_URI'], "banket.php") ){ ?> active"<? } else { ?> tooltip-bottom" 
+                    		title="Наш просторный и уютный банкетный зал<br> ждет Вас и Ваших гостей."<? } ?>>Банкетный зал</a>
+                    	
+                    	</div>
 					
 					<div class="address">
 					<a href="#" class="btn-map tooltip-bottom" title="Посмотреть карту проезда">ул. Чичерина 20</a>

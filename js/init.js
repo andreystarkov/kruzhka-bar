@@ -13,7 +13,7 @@
 			captionEasing: 'easeInOutSine', timerX: 20, 
 			controlNavHoverOpacity: 0, timer: 'Pie', timerY: 20 });
   
-  		$('.tooltip-bottom').tooltipster({position: 'bottom', animation: 'slide', speed: 500});
+  		$('.tooltip-bottom').tooltipster({position: 'bottom', animation: 'fall', speed: 500});
 
   		$('.tooltip-top').tooltipster({position: 'top', animation: 'swing', arrow: false, speed: 500});
 

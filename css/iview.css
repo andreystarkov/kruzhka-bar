@@ -2,9 +2,9 @@
 
  .container { display: block; margin: 0px auto; }
 
-#iview { display: block; width: 1150px; height: 465px; background: #000; background: rgba(0, 0, 0, 0.7); padding: 5px; 
-border-radius: 5px; position: relative; -webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5); 
--moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5); box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5); margin: 20px auto; }
+#iview { display: block; width: 1150px; height: 465px; background: #000; background: rgba(0, 0, 0, 0.7); padding: 5px;
+border-radius: 5px; position: relative; -webkit-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5); box-shadow: 0 38px 30px -18px rgba(0, 0, 0, 0.5);  }
 
 	#iview .iviewSlider { display: block; width: 1150px; height: 465px; overflow: hidden; border-radius: 4px; }
 
@@ -17,16 +17,16 @@ border-radius: 5px; position: relative; -webkit-box-shadow: 0 38px 30px -18px rg
 	.iview-controlNav a.iview-control { position: absolute; padding: 0px; bottom: 15px; right: 20px; width: 11px; height: 12px; background: url('../images/iview/bullets.png') no-repeat; line-height: 0px; }
 		.iview-controlNav a.iview-control.active { background-position: 0px -12px; }
 
-.iview-caption { color: #1a1716; border-radius: 3px; padding: 10px 15px; 
-	border-radius: 5px; box-shadow: 1px 1px 3px rgba(0.0,0,0.7); font-family: "PT Sans"; 
+.iview-caption { color: #1a1716; border-radius: 3px; padding: 10px 15px;
+	border-radius: 5px; box-shadow: 1px 1px 3px rgba(0.0,0,0.7); font-family: "PT Sans";
 	font-size: 30px; background: rgba(255,255,255,0.4); text-shadow: 1px 1px 5px rgba(0,0,0,0.3); }
 
 .iview-caption.caption1 { background: rgba(69,55,44,0.6); color: white; font-family: 'PT Sans Caption';
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.6); font-size: 26px; font-weight: 400; 
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.6); font-size: 26px; font-weight: 400;
 }
 	.iview-caption.caption2 a { color: white }
 	.iview-caption.caption2 { background: rgba(69,55,44,0.6); color: white; font-family: 'PT Sans Caption';
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.6); font-size: 21px; font-weight: 400; 
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.6); font-size: 21px; font-weight: 400;
 	}
 	.iview-caption.caption3 { background: #FFF; color: #000; font-size: 26px; text-shadow: none; }
 	.iview-caption.caption4 { font-size: 22px; font-weight: bold; }
@@ -45,7 +45,7 @@ border-radius: 5px; position: relative; -webkit-box-shadow: 0 38px 30px -18px rg
 		#iview #iview-tooltip div.holder div.container { display: block; width: 4000px; }
 			#iview #iview-tooltip div.holder div.container div { float: left; display: block; overflow: hidden; width: 124px; height: 84px; left: -50%; text-align: center; }
 				#iview #iview-tooltip div.holder div.container div img { height: 84px; margin: 0 auto; }
- 
+
 /* ----------------------- */
 
 .iviewSlider { overflow: hidden; }

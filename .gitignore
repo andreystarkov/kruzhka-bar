@@ -1,2 +1,33 @@
-# Include your project-specific ignores in this file
-# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+
+*.log
+*.sql
+*.sqlite
+
+sql-config.php
+.realsync
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+

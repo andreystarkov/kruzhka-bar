@@ -1,4 +1,15 @@
-/* im@andreystarkov.ru */
+/*
+
+                      /\ \
+     __  __  __     __\ \ \____    ____    ___     __     _____      __    ____
+    /\ \/\ \/\ \  /'__`\ \ '__`\  /',__\  /'___\ /'__`\  /\ '__`\  /'__`\ /',__\
+    \ \ \_/ \_/ \/\  __/\ \ \L\ \/\__, `\/\ \__//\ \L\.\_\ \ \L\ \/\  __//\__, `\
+     \ \___x___/'\ \____\\ \_,__/\/\____/\ \____\ \__/.\_\\ \ ,__/\ \____\/\____/
+      \/__//__/   \/____/ \/___/  \/___/  \/____/\/__/\/_/ \ \ \/  \/____/\/___/
+                                                            \ \_\
+
+*/
+
 $(function () {
 
     function pendulumEffect(obj) {
@@ -71,46 +82,11 @@ $(function () {
         pendulumEffect($(this));
     });
 
-    /* modals init */
-
-    $('#btn-int').click(function (e) {
-
-        $("#modal-int").modal({
-            minWidth: '565px',
-            maxWidth: '565px',
-            maxHeight: '700px',
-            onOpen: function (dialog) {
-                dialog.overlay.fadeIn(300, function () {
-                    dialog.data.show();
-                    dialog.container.fadeToggle(300, function () {});
-                });
-            }
-        });
-        return false;
-    });
-
-    $('.btn-map').click(function (e) {
-
-        $("#modal-map").modal({
-            minWidth: '960px',
-            maxHeight: '500px',
-            containerCss: 'overflow:hidden !important;',
-            onOpen: function (dialog) {
-                dialog.overlay.fadeIn(300, function () {
-                    dialog.data.show();
-                    dialog.container.fadeToggle(300, function () {
-
-                    });
-                });
-            }
-        });
-        return false;
-    });
 
     $(".panorama-control-left, .panorama-control-right, .panorama-control-pause").hover(function () {
-        $(this).fadeTo(300, 0.9);
+        $(this).fadeTo(300, 1);
     }, function () {
-        $(this).fadeTo(200, 0.4);
+        $(this).fadeTo(200, 0.9);
     });
 
 
@@ -155,7 +131,7 @@ $(function () {
     $('.nav-menu a').mouseleave(function () {
         if (!($(this).hasClass('active'))) {
             $(this).animate({
-                backgroundColor: 'transparent'
+                backgroundColor: 'transparent',  boxShadow: 'inset 0 0 0 rgba(0,0,0,0)'
             });
         }
     });
@@ -163,7 +139,7 @@ $(function () {
     $('.nav-menu a').mouseenter(function () {
         if (!($(this).hasClass('active'))) {
             $(this).animate({
-                backgroundColor: 'rgba(67,56,45,0.3)'
+                backgroundColor: 'rgba(67,56,45,0.2)', boxShadow: 'inset 0px 0px 6px rgba(0,0,0,0.6)'
             }, 300);
         }
     });

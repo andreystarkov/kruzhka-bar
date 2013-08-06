@@ -10,8 +10,8 @@
 		$('#button-less').ac({expadSpeed: 5000, buttons: false, toggle: false });
 
 		$('#iview').iView({ pauseTime: 7000, directionNav: false, controlNav: true, captionSpeed: 2000,
-			captionEasing: 'easeInOutSine', timerX: 20,
-			controlNavHoverOpacity: 0, timer: 'Pie', timerY: 20 });
+			captionEasing: 'easeInOutSine', timerX: 1095,
+			controlNavHoverOpacity: 0, timer: 'Pie', timerY: 400 });
 
   		$('.tooltip-bottom').tooltipster({position: 'bottom', animation: 'fall', speed: 500});
 
@@ -26,48 +26,11 @@
 			start_position: 3197
 		});
 
-  		/* banket view switcher */
+        $("img.panorama-int").panorama({
+            auto_start: 0,
+            start_position: 1197
+        });
 
-  		var viewState = 'pan';
-
-  		$('#btn-pan').addClass('act');
-  		$('#btn-pan').transition({backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 5px rgba(255,255,255,0.8), 0 2px 0 rgba(73,64,55,0.5)'});
-
-  		$('.controls .bt').hover( function(){
-  			if( !($(this).hasClass('act')) ){
-  			$(this).transition({ backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 10px rgba(73,64,55,0.3), 0 2px 0 rgba(73,64,55,0.5)'});
-  			}
-  		}, function(){
-  			if( !($(this).hasClass('act')) ){
-			$(this).transition({backgroundColor: 'rgba(217,203,176,0.8)', boxShadow: 'inset 0 0 15px rgba(73,64,55,0.4), 0 2px 0 rgba(73,64,55,0.3)'});
-			}
-  		});
-
-  		$('#btn-pan').click( function(){
-  			if(viewState != 'pan'){
-  				$(this).addClass('act');
-  				$('#btn-view').removeClass('act');
-
-  				$(this).transition({ backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 5px rgba(255,255,255,0.8), 0 2px 0 rgba(73,64,55,0.5)'});
-  				$('#btn-view').transition({backgroundColor: 'rgba(217,203,176,0.8)', boxShadow: 'inset 0 0 15px rgba(73,64,55,0.6), 0 2px 0 rgba(73,64,55,0.3)'});
-  				$('.box-view').hide();
-  				$('.box-pan').fadeIn();
-  				viewState = 'pan';
-  			}
-  		});
-
-  		$('#btn-view').click( function(){
-  			if(viewState != 'view'){
-  				$(this).addClass('act');
-  				$('#btn-pan').removeClass('act');
-
-  				$(this).transition({backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 5px rgba(255,255,255,0.8), 0 2px 0 rgba(73,64,55,0.5)'});
-  				$('#btn-pan').transition({backgroundColor: 'rgba(217,203,176,0.8)', boxShadow: 'inset 0 0 15px rgba(73,64,55,0.6), 0 2px 0 rgba(73,64,55,0.3)'});
-  				$('.box-view').fadeIn();
-  				$('.box-pan').hide();
-  				viewState = 'view';
-  			}
-  		});
 	    /* modals init */
 
 	    $('#btn-int').click(function (e) {

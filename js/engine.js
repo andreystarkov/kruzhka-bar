@@ -75,8 +75,59 @@ $(function () {
         })
     });
 
-    // bell rings
+    /* banket view switcher */
 
+    var viewState = 'pan';
+
+    $('#btn-pan').addClass('act');
+    $('#btn-pan').transition({backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 5px rgba(255,255,255,0.8), 0 2px 0 rgba(73,64,55,0.5)'});
+    $('i', '#btn-view').animate({color: 'rgba(51,29,18,0.3)'});
+
+    $('.controls .bt').hover( function(){
+        if( !($(this).hasClass('act')) ){
+        $(this).transition({ backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 10px rgba(73,64,55,0.3), 0 2px 0 rgba(73,64,55,0.5)'});
+         $('i', this).animate({color: 'rgba(51,29,18,0.7)'});
+        }
+    }, function(){
+        if( !($(this).hasClass('act')) ){
+        $(this).transition({backgroundColor: 'rgba(217,203,176,0.9)', boxShadow: 'inset 0 0 15px rgba(73,64,55,0.4), 0 2px 0 rgba(73,64,55,0.3)'});
+        $('i', this).animate({color: 'rgba(51,29,18,0.3)'});
+        }
+    });
+
+    $('#btn-pan').click( function(){
+        if(viewState != 'pan'){
+            $(this).addClass('act');
+            $('i', this).animate({color: 'rgba(51,29,18,1)'});
+            $('i', '#btn-view').animate({color: 'rgba(51,29,18,0.3)'});
+            $('#btn-view').removeClass('act');
+
+            $('#iview').trigger('iView:pause');
+            $(this).transition({ backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 5px rgba(255,255,255,0.8), 0 2px 0 rgba(73,64,55,0.5)'});
+            $('#btn-view').transition({backgroundColor: 'rgba(217,203,176,0.9)', boxShadow: 'inset 0 0 15px rgba(73,64,55,0.6), 0 2px 0 rgba(73,64,55,0.3)'});
+            $('.box-view').hide();
+
+            $('.box-pan').fadeIn();
+            viewState = 'pan';
+        }
+    });
+
+    $('#btn-view').click( function(){
+        if(viewState != 'view'){
+            $(this).addClass('act');
+            $('#btn-pan').removeClass('act');
+            $('i', this).animate({color: 'rgba(51,29,18,1)'});
+            $('i', '#btn-pan').animate({color: 'rgba(51,29,18,0.3)'});
+            $('#iview').trigger('iView:play');
+            $(this).transition({backgroundColor: 'rgba(217,203,176,1)', boxShadow: 'inset 0 0 5px rgba(255,255,255,0.8), 0 2px 0 rgba(73,64,55,0.5)'});
+            $('#btn-pan').transition({color: 'rgba(63,58,50,0.9)', backgroundColor: 'rgba(217,203,176,0.9)', boxShadow: 'inset 0 0 15px rgba(73,64,55,0.6), 0 2px 0 rgba(73,64,55,0.3)'});
+            $('.box-view').fadeIn();
+            $('.box-pan').hide();
+            viewState = 'view';
+        }
+    });
+
+    // bell rings
 
     $($('.ding-dong')).click(function (e) {
         pendulumEffect($(this));

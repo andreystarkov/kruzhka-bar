@@ -78,9 +78,8 @@
 
         <!--[if lt IE 7]>
             <p class="chromeframe">
-                Вы используете <strong>устаревший</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">установите один из современных браузеров</a>.
-                Советую установить <a href="http://www.google.com/intl/ru/chrome/browser/">Google Chrome</a>. Гарантирую, вы получите истинное удовольствие
-                от работы с передовыми веб-технологиями.
+                Вы используете <strong>устаревший</strong> браузер. Советую установить <a href="http://www.google.com/intl/ru/chrome/browser/">Google Chrome</a>.
+                Удовольствие от работы с передовыми веб-технологиями гарантировано.
             </p>
         <![endif]-->
 

@@ -1,64 +1,23 @@
 <? include "engine/template/header.php" ?>
 
-<style>
-
-    .box-holder {
-        width: 1140px;
-        height: 470px;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    .box-holder .controls {
-
-        position: absolute;
-        z-index: 6666;
-        right: 10px;
-        top: 25px;
-        width: 315px;
-
-        height: 45px;
-        float: left;
-    }
-
-    .controls .bt {
-        font-size: 18px;
-        float: left;
-        margin-left: 10px; border-radius: 5px;  padding: 8px 14px;  position: relative;
-        text-decoration: none;
-        color: #33302c; cursor: pointer;
-        box-shadow: inset 0 0 12px rgba(73,64,55,0.4), 0 2px 0 rgba(73,64,55,0.3);
-         background:rgba(217, 203, 176, 0.7);
-    }
-
-    .controls i { margin-right: 5px; text-shadow: 0 0 3px rgba(0,0,0,0.3); }
-
-    .box-view {
-        display: none;
-    }
-
-</style>
-
-<script>
-</script>
     <div class="box-holder">
 
             <div class="controls">
-                <div class="bt tooltip" title="Переключиться на круговую<br>панораму банкетного зала." id="btn-pan"><i class="icon-film"></i> Панорама</div>
+                <div class="bt tooltip" title="Переключиться на круговую<br>панораму банкетного зала." id="btn-pan"><i class="icon-film"></i> Панорама зала</div>
                 <div class="bt tooltip" title="Рассмотреть детали интерьера<br>в виде фотогалереи." id="btn-view"><i class="icon-camera-retro"></i> Фотографии</div>
             </div>
 
             <div class="box-pan">
-            <div id="pan">
-                <img src="images/pan-banket-lighter.jpg" class="panorama" width="6675" height="465" />
-            </div>
+                <div id="pan">
+                    <img src="images/pan-banket.jpg" class="panorama" width="6675" height="465" />
+                </div>
             </div>
 
             <div class="box-view">
+
                 <div id="iview">
 
                     <div data-iview:image="images/b-slides/1.jpg">
-
 
                     </div>
 
@@ -112,17 +71,18 @@
                 </div>
             </div>
         </div>
-                <div id="content-main" class="content-block" style="height: 210px">
-                    <p>Опыт и профессионализм сотрудников нашей банкетной службы, помогут Вам спланировать торжество, и осуществить все Ваши идеи.
-                        Мы гарантируем высокий уровень обслуживания, в сочетании с изобилием на Ваших столах.</p>
 
-                    <p>Банкетный зал расположен по соседству с рестораном «Кружка».</p>
+        <div id="content-main" class="content-block" style="height: 210px">
+            <p>Опыт и профессионализм сотрудников нашей банкетной службы, помогут Вам спланировать торжество, и осуществить все Ваши идеи.
+                Мы гарантируем высокий уровень обслуживания, в сочетании с изобилием на Ваших столах.</p>
 
-                    <div class="button-group">
-                        <div class="link-container"><a class="btn-map-b" href="#">Карта проезда</a> <i class="icon-search"></i></div>
+            <p>Банкетный зал расположен по соседству с рестораном «Кружка».</p>
 
-                    </div>
+            <div class="button-group">
+                <div class="link-container"><a class="btn-map-b" href="#">Карта проезда</a> <i class="icon-search"></i></div>
 
-                </div>
+            </div>
+
+        </div>
 
 <? include "engine/template/footer.php" ?>

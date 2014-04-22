@@ -41,18 +41,19 @@
         <script src="js/vendor/jquery-1.9.1.min.js"></script>
         <script src="js/vendor/jquery-migrate-1.1.1.min.js"></script>
 
-	    <script src="js/libs.pack.js"></script>
-        <script src="js/panorama.js"></script>
-        <script src="js/nano.js"></script>
-        <script src="js/buzz.js"></script>
-        <script src="js/ac.js"></script>
-        <script src="js/transit.js"></script>
-        <script src="js/modal.js"></script>
-        <script src="js/textshadow.js"></script>
-        <script src="js/tooltipster.js"></script>
-        <script src="js/plugins.js"></script>
+	    <script src="js/vendor/libs.pack.js"></script>
+        <script src="js/vendor/panorama.js"></script>
+        <script src="js/vendor/nano.js"></script>
+        <script src="js/vendor/buzz.js"></script>
+        <script src="js/vendor/ac.js"></script>
+        <script src="js/vendor/transit.js"></script>
+        <script src="js/vendor/modal.js"></script>
+        <script src="js/vendor/textshadow.js"></script>
+        <script src="js/vendor/tooltipster.js"></script>
+        <script src="js/vendor/plugins.js"></script>
+        <script src="js/vendor/loader.js"></script>
+
         <script src="js/engine.js"></script>
-        <script src="js/loader.js"></script>
         <script src="js/init.js"></script>
 
 		<script type="text/javascript" charset="utf-8" src="http://api-maps.yandex.ru/services/constructor/1.0/js/?sid=oc2aCjzZ_p7qgdfNc3EwJD9JG38dEiHC&amp;width=980&amp;height=400&amp;id=ymap-main"></script>
